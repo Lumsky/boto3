@@ -1,0 +1,8 @@
+import boto3
+
+ec2 = boto3.client("ec2")
+vpc_id = "vpc-0815091417e6de3b5"
+
+ec2.delete_vpc(
+    VpcId=vpc_id
+)
